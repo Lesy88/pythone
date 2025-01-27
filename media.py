@@ -5,7 +5,7 @@ while (risposta != 'fine') :
     numero_float = float(input ("metti numero:"))
     somma_numeri += numero_float
     contatore += 1 
-    risposta = input ('fine?')
+    risposta = input ('fine?  \n')
 print ('La tua media è ', somma_numeri/contatore)
 
 
