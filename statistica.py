@@ -1,4 +1,4 @@
-numero = input ('Inserire i voti da 1 fino 10:')
+numero = input ('Inserire i voti da 1 fino 10: \n')
 contatore = 0
 sommaParziale = 0
 votiCinema = []
@@ -27,6 +27,9 @@ for numero in votiCinema :
     if numero == min(votiCinema):
        votiCinema.remove(numero)
        break
-   
+for numero in votiCinema :
+    if numero == max(votiCinema):
+       votiCinema.remove(numero)
+       break
 print(votiCinema)
 print("La media dei voti è", sum(votiCinema)/len(votiCinema))
