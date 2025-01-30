@@ -41,7 +41,7 @@ while True:
    else:
       isPet.append(True)
    i += 1
-print(prices)
-print(isPet)
-print("Tuo sconto totale è ", discount(prices,isPet,6), "euro")
+print("\n",prices)
+print("\n",isPet)
+print("Tuo sconto totale è %.2f" % discount(prices,isPet,6), "euro")
 
