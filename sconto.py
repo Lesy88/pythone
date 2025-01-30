@@ -26,6 +26,9 @@ isPet = []
 stringa = ""
 while True:
    stringa = input("Inserisci il prezzo e codice (Y/N): (-1 per la fine): ")
+   if stringa == "-1":
+      prices.append(float(-1))
+      break
    # Separiamo la stringa usando il metodo split()
    parte_numerica, parte_simbolica = stringa.split()
    # Converto la parte numerica in float
@@ -33,8 +36,6 @@ while True:
    # La parte simbolica rimane come stringa
    codice = parte_simbolica
    prices.append(price) 
-   if price == -1: 
-      break
    if codice == "N":
      isPet.append(False)
    else:
