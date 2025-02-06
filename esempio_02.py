@@ -5,9 +5,8 @@ if pos == -1:
     raise ValueError("Manca il separatore ")
 righe=int(riga[: pos])
 simbolo= riga[pos+1 : ]
-print(righe,simbolo)
 spazio=righe
-for i in range (1,righe+1) :
+for i in range (0,righe) :
     print(" "*spazio,simbolo*j)
     j+=2
     spazio -= 1
