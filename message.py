@@ -9,22 +9,24 @@ il metodo to toString ce trasforma il messaggio in un'unica lunga stringa.
 Scrivete un programma che usi questa classe per creare un messaggio e visualizzarlo.
 """
 class Message :
-    def __init__(self, destinatario, mittente, testo="") : #costruttore della classe
+    def __init__(self, destinatario, mittente) : #costruttore della classe
         self._destinatario = destinatario #qualifichiamo le variabili della cLasse
         self._mittente = mittente
-        self._corpoMessaggio = [testo]
+        self._corpoMessaggio = []
+        #print(type(self._corpoMessaggio))
 
     def append(self, riga):
         self._corpoMessaggio.append(riga)
-    
+
     def toString(self):
         messaggio_completo = "Destinatario: " + self._destinatario + "\nMittente: " + self._mittente + "\n"
+        #print(type(messaggio_completo))
         messaggio_completo += '\n'.join(self._corpoMessaggio)  # Unisce la stringa con la lista
+        #print(type(messaggio_completo))
         return messaggio_completo
 
-
 # Creazione del messaggio
-message = Message("mario@gmail.com", "luigi@posta.com", "Ciao!")
+message = Message("mario@gmail.com", "luigi@posta.com")
 
 # Aggiungiamo un'altra riga
 message.append("Spero tu stia bene.")
