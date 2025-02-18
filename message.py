@@ -18,6 +18,12 @@ class Message :
     def append(self, riga):
         self._corpoMessaggio.append(riga)
 
+    """def __str__(self):
+        messaggio_completo = "Destinatario: " + self._destinatario + "\nMittente: " + self._mittente + "\n"
+        #print(type(messaggio_completo))
+        messaggio_completo += '\n'.join(self._corpoMessaggio)  # Unisce la stringa con la lista
+        #print(type(messaggio_completo))
+        return messaggio_completo"""
     def toString(self):
         messaggio_completo = "Destinatario: " + self._destinatario + "\nMittente: " + self._mittente + "\n"
         #print(type(messaggio_completo))
