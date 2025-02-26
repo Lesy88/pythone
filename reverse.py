@@ -3,7 +3,7 @@ import os
 import sys
 # Creare una lista vuota
 lista = []
-nome=input("Inserire il nome del file TXT")
+nome=input("Inserire il nome del file TXT: ")
 if not os.path.exists(nome):
     print ("Il file non esiste")
     sys.exit()
