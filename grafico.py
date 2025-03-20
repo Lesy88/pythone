@@ -3,11 +3,11 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 # Data for the 2D bar graphs (population data for the first 5 months)
-under_18_population = [6915000, 6868000, 6937000, 6795000, 6628000]  # Under 18 population for 5 months
-total_population = [58944448, 58949940, 58945421, 58952506, 58962063]  # Total population for 5 months
+under_18_population = [13267610, 12401400, 9344252, 8156572, 7720883]  # Under 18 population for 5 months
+total_population = [53821850, 56433880, 56719240, 56942110, 59449530]  # Total population for 5 months
 
 # Months (5 months, so we use 1 to 5)
-months = ["Aprile", "Maggio", "Giugno", "Luglio", "Agosto"]
+months = ["1980", "1990", "2000", "2010", "2020"]
 
 # Set the bar width and positions (numerical values for plotting)
 x = np.arange(len(months))  # Numeric positions for months (0 to 4)
